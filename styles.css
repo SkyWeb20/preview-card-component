@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Lexend Deca', sans-serif;
+    background-color: #F2F2F2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+main {
+    display: flex;
+    max-width: 920px;
+}
+
+.card {
+    padding: 48px;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.card:nth-child(1) {
+    background-color: #e28525;
+    border-radius: 8px 0 0 8px;
+}
+
+.card:nth-child(2) {
+    background-color: #016972;
+}
+
+.card:nth-child(3) {
+    background-color: #00403f;
+    border-radius: 0 8px 8px 0;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.5rem;
+}
+
+.header img {
+    width: 64px;
+    height: 40px;
+}
+
+.header h2 {
+    font-family: 'Big Shoulders Display', cursive;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    font-size: 2.5rem;
+}
+
+.card p {
+    color: #FFFFFF;
+    line-height: 1.6;
+}
+
+.card button {
+    background-color: #FFFFFF;
+    border: 2px solid #FFFFFF;
+    padding: 0.5rem 1.5rem;
+    border-radius: 2rem;
+    font-family: inherit;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    align-self: flex-start;
+    margin-top: 3rem;
+}
+
+.card:nth-child(1) button {
+    color: #E38826;
+}
+
+.card:nth-child(2) button {
+    color: #006970;
+}
+
+.card:nth-child(3) button {
+    color: #004241;
+}
+
+.card button:hover {
+    background-color: transparent;
+    color: #FFFFFF;
+}
+
+@media (max-width: 768px) {
+    main {
+        margin-top: 10rem;
+        margin-bottom: 10rem;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        max-width: 350px;
+    }
+
+    .card:nth-child(1) {
+        border-radius: 8px 8px 0 0;
+    }
+
+    .card:nth-child(2) {
+        border-radius: 0;
+    }
+
+    .card:nth-child(3) {
+        border-radius: 0 0 8px 8px;
+    }
+}
